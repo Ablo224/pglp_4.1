@@ -1,20 +1,33 @@
 package uvsq21606235;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+/**
+ * Unit test for simple App.
+ */
+public class AppTest extends TestCase
 {
     /**
-     * Rigorous Test :-)
+     * crée les cas de test
+     * 
+     * @param testName nom du cas de test
      */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+	public AppTest(String testName) {
+		super(testName);
+	}
+	
+	public static Test suite() {
+		return  (Test) new TestSuite( AppTest.class);
+	}
+	
+	
+	public void testApp() {
+		assertTrue(true);
+	}
+	
 }
