@@ -18,7 +18,7 @@ public final class App {
 	    	ArrayList<String> num = new ArrayList<String>();
 	    	num.add("07-28-54-81-10");
 	    	num.add("09-10-15-00-00");
-	        Personnel p = new Personnel.Builder("Ababa","Amoulanfé", "Animateur", LocalDate.of(2000, 12, 12),num).build();
+	        Personnel p = new Personnel.Builder("Ababa","Amoulanfé", "Animateur", LocalDate.of(1900, 9, 12),num).build();
 	      
 	        p3.add(p);
 	        p3.add(p2);
@@ -28,6 +28,10 @@ public final class App {
 	        AffichageParGroupe parcours = new AffichageParGroupe();
 	        System.out.println("Parcours en profondeur : ");
 	        p1.affichage();
+	    }
+	    
+	    public  App() {
+	    	App.main(null); 
 	    }
 	}
 
